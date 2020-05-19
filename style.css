@@ -160,3 +160,66 @@ span {
     letter-spacing: 1px;
     color: #888888;
 }
+
+.author {
+    margin: 25px 0px 15px 360px;
+    font-family: 'Merriweather', serif;
+}
+
+.author-name{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.auth {
+    text-decoration: none;
+    color: #000000;
+}
+
+.auth:hover{
+    text-decoration: underline;
+}
+
+.sm-icons {
+    margin-top: 20px;
+}
+
+.fb {
+    width: 27px;
+    height: 37px;
+    border-radius: 15px 15px 15px 15px;
+    background: #888888
+}
+
+.fb img {
+    width: 27px;
+    height: 27px;
+}
+
+.twit {
+    width: 27px;
+    height: 27px;
+    border-radius: 32px;
+    border: 1px solid #000;
+}
+
+.twit img{
+    width: 27px;
+    height: 27px;
+}
+
+.mail {
+
+}
+
+.mail img {
+
+}
+
+.bkmrk {
+
+}
+
+.bkmrk img{
+
+}
