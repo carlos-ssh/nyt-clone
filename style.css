@@ -1,0 +1,32 @@
+body{
+    background: #FEFEFE;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.top-nav{
+    height: 48;
+    border-bottom: #5F5F5F;
+    justify-content: right;
+    display: inline-flex;
+
+}
+
+.top-nav img{
+    display: flex;
+    height: 40px;
+    width: 320px;
+    align-items: center;
+}
+.top-nav > .lft-icons{
+    display: flex;
+    flex-direction: row;
+
+}
+.rgt-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
