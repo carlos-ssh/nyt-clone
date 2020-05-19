@@ -1,17 +1,18 @@
 body{
     background: #FEFEFE;
-    font-size: 18px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
     margin: 0;
     padding: 0;
-
 }
 
 .top-nav{
     height: 48;
-    border-bottom: #5F5F5F;
-    justify-content: right;
-    display: inline-flex;
-
+    border-bottom: 1px solid #c4c4c4;
+   flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 20px 15px 20px;
 }
 
 .top-nav img{
@@ -19,14 +20,67 @@ body{
     height: 40px;
     width: 320px;
     align-items: center;
+    
 }
 .top-nav > .lft-icons{
     display: flex;
-    flex-direction: row;
-
+    /*flex-direction: row;*/
+    align-items: center;
+    justify-content: flex-start;
 }
-.rgt-icons{
+
+.top-nav > .lft-icons > .bars {
+    margin: 5px;
+}
+
+.top-nav > .lft-icons > .search {
+    margin: 1px 25px 1px 25px;
+}
+
+.top-nav > .rgt-icons{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;  
     justify-content: flex-end;
+    height: 35px;
+    margin: 4px 17px 5px 1px;
+}
+
+.top-nav > .rgt-icons > .subs {
+    border-radius: 4px;
+    background-color: #235C8A;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.top-nav > .rgt-icons > .login {
+    margin-left: 7px;
+    border-radius: 4px;
+    background-color: #235C8A;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.top-nav > .rgt-icons a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 15px 4px 4px 4px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.top-nav > .lft-icons a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+
+.nyt-logo{
+    display: flex;
+    align-items: center; 
+    position: relative;
+    top: 8px;   
 }
