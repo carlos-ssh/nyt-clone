@@ -164,6 +164,7 @@ span {
 .author {
     margin: 25px 0px 15px 360px;
     font-family: 'Merriweather', serif;
+    width: 600px;
 }
 
 .author-name{
@@ -181,10 +182,13 @@ span {
 }
 
 .sm-icons {
-    margin-top: 20px;
+    margin-top: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.fb {
+/*.fb {
     width: 27px;
     height: 37px;
     border-radius: 15px 15px 15px 15px;
@@ -222,4 +226,152 @@ span {
 
 .bkmrk img{
 
+}*/
+.icon-btns > li {
+    display: inline-block;
+    margin-right: 16px;
+}
+.icon-btns svg {
+    box-sizing: content-box;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    border: 1px;
+    background: #eee;
+    border-radius: 100%;
+}
+.icon-btns svg:hover {
+    background:  #c4c4c4;
+}
+.main-article {
+    width: 600px;
+    margin: 25px 0px 15px 360px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+}
+.main-article p {
+    margin-top: 15px;
+}
+.main-article h3 {
+    margin-top: 15px;
+}
+.inflation-theory {
+  width: 945px;
+  margin: 30px auto;
+  box-sizing: border-box;
+}
+
+.inflation-theory h2 {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-family: nyt-cheltenham, georgia, times new roman, times, serif;
+  color: #000;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+
+.inflation-theory-cell {
+  display: inline-block;
+  color: #666;
+  font-family: nyt-cheltenham-sh, georgia, times new roman, times, serif;
+  line-height: 1.125rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+}
+
+.inflation-theory-container {
+  height: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+  background-size: contain;
+  box-sizing: border-box;
+}
+
+.inflation-theory-grid {
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  column-gap: 10px;
+  row-gap: 8px;
+  box-sizing: border-box;
+}
+
+.inflationSectionGrid p {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #000;
+  margin: 0;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+.inflation-theory-footer {
+  width: 60px;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin: 0 0 13px;
+  background-color: #000;
+  max-width: 945px;
+  margin-top: 24px;
+}
+
+.inflation-theory-credit {
+  font-family: nyt-cheltenham, georgia, times new roman, times, serif;
+  color: #333;
+  font-size: 100%;
+}
+
+.inflation-theory-credit p {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 500;
+  font-style: normal;
+  font-family: arial, helvetica, sans-serif;
+  width: 700px;
+}
+
+.inflation-theory-spacer {
+  content: "";
+  border: none;
+  margin-bottom: 25px;
+}
+
+.article-figures {
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 0 16px;
+    box-sizing: content-box; 
+}
+
+.article-figures > :first-child {
+    width: 100%;
+}
+.article-figures > figcaption {
+    margin: 5px 50px 0 0;
+}
+.article-figures .video-title {
+    color: #666;
+    line-height: 24px;
+}
+.article-figures .video-credit {
+    font-size: 13px;
+    color: #888;
+}
+.article-figures .video-title {
+    color: #666;
+    line-height: 24px;
+}
+.article-figures .video-credit {
+    font-size: 13px;
+    color: #888;
 }
