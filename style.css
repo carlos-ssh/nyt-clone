@@ -9,11 +9,36 @@ body{
     font-size: 14px;
 }
 
+/* ----- ADDED THE FONTS FOR THE PROJECT ----- */
+
+@font-face {
+    font-family: "Cheltenham";
+    src: url('resources/fonts/Cheltenham Bold Italic.otf')  format('truetype');
+}
+
+@font-face {
+    font-family: "franklyn-Regular";
+    src: url('resources/fonts/franklyn-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: "nyt-imperial-bold";
+    src: url('resources/fonts/nyt-imperial-bold.woff.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: "nyt-imperial-bold";
+    src: url('resources/fonts/times.ttf')  format('truetype');
+}
 /* ----- ...HERE STARTS THE STICKY NAVBAR ----- */
-header {
+nav {
     position: sticky;
     top: 0;
     background: #ffffff;
+    border-bottom: 1px solid #c4c4c4;
+    flex-direction: row;
+    align-self: center;
+    padding: 0px 20px 5px 20px;
 }
 
 .top-nav{
@@ -24,7 +49,19 @@ header {
     justify-content: space-between;
     padding: 0px 20px 5px 20px;
 }
+#first{
+    transition: top 0.3s;
+    /*position: ; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    background: #ffffff;
 
+}
+#second {
+    transition: top 0.3s;
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    background: #ffffff;
+}
 .top-nav img{
     display: flex;
     height: 28px;
@@ -56,6 +93,10 @@ header {
 
 .spc{
     margin: 15px 5px 0px 0px;
+}
+
+.spc-wrd{
+    font-family: "franklyn-Regular";
 }
 
 .subs button{
@@ -141,7 +182,7 @@ header {
 
 .title{
     text-align: left;
-    font-family: 'Merriweather', serif;
+    font-family: "Cheltenham";
     font-size: 20px;
     font-weight: 900;
     font-style: italic;
@@ -155,8 +196,8 @@ figcaption{
 }
 
 span {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
+    font-family: "Cheltenham";
+    font-size: 12px;
     letter-spacing: 1px;
     color: #888888;
 }
@@ -374,4 +415,91 @@ span {
 .article-figures .video-credit {
     font-size: 13px;
     color: #888;
+}
+
+/*SECOND NAVBAR*/
+.second-nav {
+    border-bottom: #666;
+    width: 100%;
+    max-width: 100%;
+    height: 38.75px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 33.33%);
+    grid-template-rows: repeat(1, 33.33%);
+    grid-template-areas: "nyt-svg cosmo social-icons";
+    flex-direction: row;
+}
+
+.second-logo {
+    grid-area: nyt-svg;
+    align-self: baseline;
+    margin: 10px 0px 10px 15px;
+    width: 184px;
+    height: auto;
+}
+
+.nyt-svg {
+    width: 184px;
+}
+
+.cosmo {
+    grid-area: cosmo;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    font-weight: 800;
+    align-self: stretch;
+    height: 38px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: -250px;
+}
+.cosmo:hover{
+    text-decoration: underline;
+}
+
+.cosmo span {
+    font-size: 14px;
+    font-family: "Cheltenham";
+    color: #000000;
+}
+
+.cosmo span:hover{
+    text-decoration: none;
+}
+
+.cosmo-anchor {
+    text-decoration: none;
+    font-family: "franklyn-Regular";
+    font-weight: bolder;
+    color: #000000;
+    height: 38px;
+}
+
+.social-icons {
+    grid-area: social-icons;
+}
+
+.sm-grid {
+    grid-area: social-icons;
+    list-style-type: none;
+    display: inline-flex;
+    width: 280px;
+    height: 38px;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+.sm-grid svg {
+    box-sizing: content-box;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    border: 1px;
+    background: #eee;
+    border-radius: 100%;
+}
+
+.sm-grid svg:hover {
+    background:  #c4c4c4;
 }
