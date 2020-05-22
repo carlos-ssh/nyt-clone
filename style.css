@@ -49,19 +49,20 @@ nav {
     justify-content: space-between;
     padding: 0px 20px 5px 20px;
 }
-#first{
+/*
+ #first {
     transition: top 0.3s;
-    /*position: ; /* Make it stick/fixed */
-    top: 0; /* Stay on top */
+    top: 0; 
     background: #ffffff;
-
 }
+
 #second {
     transition: top 0.3s;
-    position: fixed; /* Make it stick/fixed */
-    top: 0; /* Stay on top */
+    position: fixed; 
+    top: 0; 
     background: #ffffff;
 }
+*/
 .top-nav img{
     display: flex;
     height: 28px;
@@ -502,4 +503,10 @@ span {
 
 .sm-grid svg:hover {
     background:  #c4c4c4;
+}
+
+.container-main {
+    width: 90%;
+    border: 3px solid red;
+    align-content: center;
 }

@@ -1,4 +1,4 @@
-var prevScrollpos = window.pageYOffset;
+/*var prevScrollpos = window.pageYOffset;
 document.getElementById("second").style.visibility = "hidden";
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
@@ -10,4 +10,4 @@ var currentScrollPos = window.pageYOffset;
     document.getElementById("second").style.visibility = "visible";
   }
   prevScrollpos = currentScrollPos;
-}
+}*/
