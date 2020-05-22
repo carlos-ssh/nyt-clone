@@ -34,35 +34,22 @@ body{
 nav {
     position: sticky;
     top: 0;
-    background: #ffffff;
-    border-bottom: 1px solid #c4c4c4;
-    flex-direction: row;
     align-self: center;
     padding: 0px 20px 5px 20px;
 }
 
 .top-nav{
-    height: 33px;
+    width: 95%;
+    background: #ffffff;
+    height: 34px;
     border-bottom: 1px solid #c4c4c4;
     flex-direction: row;
     display: flex;
     justify-content: space-between;
     padding: 0px 20px 5px 20px;
-}
-/*
- #first {
-    transition: top 0.3s;
-    top: 0; 
-    background: #ffffff;
+    position: absolute;
 }
 
-#second {
-    transition: top 0.3s;
-    position: fixed; 
-    top: 0; 
-    background: #ffffff;
-}
-*/
 .top-nav img{
     display: flex;
     height: 28px;
@@ -191,7 +178,7 @@ nav {
 }
 
 figcaption{
-    margin: 10px 0px 5px 170px;
+    margin: 10px 0px 5px 208px;
     text-align: left;
     font-weight: 400;
 }
@@ -204,7 +191,7 @@ span {
 }
 
 .author {
-    margin: 25px 0px 15px 360px;
+    margin: 25px 0px 15px 370px;
     font-family: 'Merriweather', serif;
     width: 600px;
 }
@@ -224,7 +211,7 @@ span {
 }
 
 .sm-icons {
-    margin-top: 20px 0;
+    margin: 20px 0px 15px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -286,21 +273,27 @@ span {
     background:  #c4c4c4;
 }
 .main-article {
-    width: 600px;
-    margin: 25px 0px 15px 360px;
+    width: 700px;
+    margin: 25px 0px 90px 360px;
     font-size: 1.25rem;
     line-height: 1.875rem;
     font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    justify-content: center;
+}
+#intro{
+    align-items: center;
 }
 .main-article p {
     margin-top: 15px;
+    text-align: left;
 }
 .main-article h3 {
     margin-top: 15px;
+    text-align: center;
 }
 .inflation-theory {
   width: 945px;
-  margin: 30px auto;
+  margin: 40px auto;
   box-sizing: border-box;
 }
 
@@ -326,6 +319,8 @@ span {
   font-weight: 400;
   font-style: normal;
   font-size: 0.875rem;
+  margin-bottom: 20px;
+  
 }
 
 .inflation-theory-container {
@@ -334,15 +329,16 @@ span {
   width: 100%;
   background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
   background-size: contain;
-  box-sizing: border-box;
+  border: 1px solid red;
 }
 
 .inflation-theory-grid {
   display: grid;
   grid-template: repeat(4, 1fr) / repeat(4, 1fr);
-  column-gap: 10px;
-  row-gap: 8px;
+  column-gap: 15px;
   box-sizing: border-box;
+  margin-top: 150px;
+  grid-row-gap: 130px;
 }
 
 .inflationSectionGrid p {
@@ -420,7 +416,8 @@ span {
 
 /*SECOND NAVBAR*/
 .second-nav {
-    border-bottom: #666;
+    border-bottom: 1px solid #666;
+    background: #ffffff;
     width: 100%;
     max-width: 100%;
     height: 38.75px;
@@ -430,6 +427,9 @@ span {
     grid-template-rows: repeat(1, 33.33%);
     grid-template-areas: "nyt-svg cosmo social-icons";
     flex-direction: row;
+    opacity: 1; 
+    z-index: 900; 
+    visibility: visible;
 }
 
 .second-logo {
@@ -480,6 +480,7 @@ span {
 
 .social-icons {
     grid-area: social-icons;
+
 }
 
 .sm-grid {
@@ -489,7 +490,7 @@ span {
     width: 280px;
     height: 38px;
     justify-content: space-around;
-    padding-top: 15px;
+    padding-top: 8px;
 }
 .sm-grid svg {
     box-sizing: content-box;
@@ -506,7 +507,6 @@ span {
 }
 
 .container-main {
-    width: 90%;
-    border: 3px solid red;
+    width: 100%;
     align-content: center;
 }
