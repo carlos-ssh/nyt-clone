@@ -38,6 +38,18 @@ nav {
     padding: 0px 20px 5px 20px;
 }
 
+figcaption{
+    line-height: 15px;
+    color: #c4c4c4;
+    font-size: 12px;
+    align-self: flex-start;
+    margin-left: -150px;
+}
+
+iframe{
+    margin: 40px 0px 0px 0px;
+}
+
 .top-nav{
     width: 95%;
     background: #ffffff;
@@ -324,12 +336,10 @@ span {
 }
 
 .inflation-theory-container {
-  height: 100%;
   background-repeat: no-repeat;
-  width: 100%;
   background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
   background-size: contain;
-  border: 1px solid red;
+  padding-top: 280px;
 }
 
 .inflation-theory-grid {
@@ -339,6 +349,8 @@ span {
   box-sizing: border-box;
   margin-top: 150px;
   grid-row-gap: 130px;
+  margin-top: -130px;
+  height: 500px;
 }
 
 .inflationSectionGrid p {
@@ -360,7 +372,7 @@ span {
   margin: 0 0 13px;
   background-color: #000;
   max-width: 945px;
-  margin-top: 24px;
+
 }
 
 .inflation-theory-credit {
@@ -385,31 +397,27 @@ span {
 }
 
 .article-figures {
-    max-width: 600px;
-    margin: 0 auto; 
+    margin: 15px 0px 40px 0px; 
     padding: 0 16px;
     box-sizing: content-box; 
+    width: 655px;
+    height: 437px;
 }
 
 .article-figures > :first-child {
     width: 100%;
 }
 .article-figures > figcaption {
-    margin: 5px 50px 0 0;
+    margin: 5px 0px 50px 0;
 }
-.article-figures .video-title {
-    color: #666;
-    line-height: 24px;
+.video-title {
+    color: #666;    
 }
-.article-figures .video-credit {
-    font-size: 13px;
-    color: #888;
+.mil2{
+    margin-top: 100px;
 }
-.article-figures .video-title {
-    color: #666;
-    line-height: 24px;
-}
-.article-figures .video-credit {
+
+.video-credit {
     font-size: 13px;
     color: #888;
 }
@@ -427,9 +435,6 @@ span {
     grid-template-rows: repeat(1, 33.33%);
     grid-template-areas: "nyt-svg cosmo social-icons";
     flex-direction: row;
-    opacity: 1; 
-    z-index: 900; 
-    visibility: visible;
 }
 
 .second-logo {
@@ -478,25 +483,26 @@ span {
     height: 38px;
 }
 
-.social-icons {
-    grid-area: social-icons;
-
-}
-
 .sm-grid {
-    grid-area: social-icons;
+
+    width: 200px;
+    height: 38px;
+    display: inline-flex;
+}
+.icns-sm{
     list-style-type: none;
     display: inline-flex;
-    width: 280px;
-    height: 38px;
-    justify-content: space-around;
-    padding-top: 8px;
+    margin: 5px;
+    width: 200px;
+    justify-content: space-between;
+    position: relative;
+    left: 200px;
+    bottom: 7px;
 }
 .sm-grid svg {
-    box-sizing: content-box;
     width: 15px;
     height: 15px;
-    padding: 5px;
+    padding: 10px;
     border: 1px;
     background: #eee;
     border-radius: 100%;
@@ -509,4 +515,40 @@ span {
 .container-main {
     width: 100%;
     align-content: center;
+}
+
+.page1{
+    text-decoration: none;
+    border: 1px solid red;
+}
+
+.articles-down{
+    margin-top: 28px;
+    line-height: 10px;
+    margin-bottom: 20px;
+}
+.btn-comments{
+   width: 700px; 
+   height: 32px;
+   display: flex;
+}
+.btn-comments button{
+    background-color: rgb(86, 123, 149);
+    color: white;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(50, 104, 145);
+    border-image: initial;
+    border-radius: 3px;
+    padding: 5px 0px;
+    transition: background-color 0.6s ease 0s;
+    vertical-align: middle;
+    height: 32px;
+    width: 261px;
 }
