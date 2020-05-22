@@ -229,45 +229,6 @@ span {
     align-items: center;
 }
 
-/*.fb {
-    width: 27px;
-    height: 37px;
-    border-radius: 15px 15px 15px 15px;
-    background: #888888
-}
-
-.fb img {
-    width: 27px;
-    height: 27px;
-}
-
-.twit {
-    width: 27px;
-    height: 27px;
-    border-radius: 32px;
-    border: 1px solid #000;
-}
-
-.twit img{
-    width: 27px;
-    height: 27px;
-}
-
-.mail {
-
-}
-
-.mail img {
-
-}
-
-.bkmrk {
-
-}
-
-.bkmrk img{
-
-}*/
 .icon-btns > li {
     display: inline-block;
     margin-right: 16px;
@@ -553,6 +514,68 @@ span {
     width: 261px;
 }
 
-.more-space{
+.more {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+    column-gap: 1%;
+    grid-auto-rows: minmax(auto, auto);
+}
 
+.more-title{
+    justify-content: flex-start;
+    text-decoration: none;
+    padding: 15px 0px 15px 155px; 
+}
+
+.most-title{
+    justify-content: flex-end;
+    padding: 15px 250px 0px 50px; 
+}
+
+.more img {
+    width: 227px;
+    height: 152px;
+}
+
+.imgs-container{
+    width: 80%;
+ 
+}
+
+.uno{
+    grid-row: 1;
+    grid-column: 1/4;
+}
+
+.dos {
+    grid-row: 2;
+    grid-column: 1/3;
+}
+.tres {
+    grid-row: 2;
+    grid-column: 2/3;
+}
+.cuatro{
+    grid-row: 2;
+    grid-column: 3/3;
+}
+.cinco{
+    grid-row: 3;
+    grid-column: 1/3;
+}
+.seis{
+    grid-row: 3;
+    grid-column: 2/3;
+}
+.siete{
+    grid-row: 3;
+    grid-column: 3/3;
+}
+
+
+.ocho{
+    grid-row: 1;
+    grid-column: 4/4;
 }
