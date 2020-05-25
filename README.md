@@ -2,7 +2,7 @@
 
 ![screenshot](./nyt.jpg)
 
-This project consists of building an HTML document that matches the appearance of mint.com’s signup page
+This project consists of building an HTML document that matches the appearance of NYT’s Article page.
 
 ## Built With
 
@@ -11,7 +11,7 @@ This project consists of building an HTML document that matches the appearance o
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/carlos-ssh/apple/e296d9ddfb3bf0b786e806118386ab6a1e46c08c/index.html)
+[Live Demo Link](https://rawcdn.githack.com/carlos-ssh/nyt-clone/6c275aded818639d17f1d895cff618d58ef035df/index.html)
 
 
 
@@ -28,9 +28,9 @@ This project consists of building an HTML document that matches the appearance o
 
 👤 **Peter Isiko**
 
-- Github: [@Carlos-SSH](https://github.com/petersteph88) 
-- Twitter: [@AomRobles](https://twitter.com/) 
-- Linkedin: [Carlos-SSH](www.linkedin.com/in/)
+- Github: [@Peter](https://github.com/petersteph88) 
+- Twitter: [@Peter](https://twitter.com/) 
+- Linkedin: [Peter](www.linkedin.com/in/)
 
 
 
