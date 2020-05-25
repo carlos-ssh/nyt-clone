@@ -545,6 +545,7 @@ span {
 }
 
 .side-b{
+    width: 268px;
     grid-row: 1;
     grid-column: 2/2;
     justify-content: right;
@@ -677,19 +678,14 @@ span {
 }
 
 .bottom-section-container {
-  margin: 100px auto;
-  max-width: 1200px;
-  padding: 0 3% 9px;
-}
-
-.bottom-section {
-  padding: 0;
+    max-width: 1229px;
+    margin: 50px 0 10px 40px;
+    
 }
 
 .bottom-section-header {
-    margin-top: 10px;
-  display: flex;
-  flex-flow: row;
+    margin-top: 20px;
+    height: 40px;
 }
 
 .bottom-nytimes-logo {
@@ -698,22 +694,14 @@ span {
   width: 184px;
 }
 
-.goto-homepage {
-  margin: 10px 0 0 auto;
-}
-
 .goto-homepage-link {
   color: #567b95;
   font-family: helvetica, arial, sans-serif;
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 11px;
+  font-size: 10px;
   text-decoration: none;
-}
-
-.bottom-link-section-container {
-  display: block;
+  position: relative;
+  left: 1070px;
+  bottom: 145px;
 }
 
 .bottom-link-section {
@@ -724,18 +712,6 @@ span {
 
 .bottom-link-section-columns {
   flex: 1;
-}
-
-.bottom-link-section-headers {
-  color: #333;
-  font-size: 13px;
-  font-weight: 700;
-  font-family: helvetica, arial, sans-serif;
-  height: 25px;
-  line-height: 15px;
-  margin: 0;
-  text-transform: uppercase;
-  width: 150px;
 }
 
 .bottom-link-section-uls {
@@ -813,7 +789,7 @@ span {
 }
 
 .footer-container {
-  font-size: 11px;
+  font-size: 9px;
   text-align: center;
   margin: 0 auto 20px auto;
   max-width: 1200px;
@@ -835,7 +811,7 @@ span {
 }
 
 .footer-links {
-  color: #666;
+    color: #666666;
   font-family: helvetica, arial, sans-serif;
   padding: 10px 0;
   text-decoration: none;
