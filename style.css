@@ -8,7 +8,16 @@ body {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 14px;
   width: 100%;
+  position: relative;
 }
+
+@media screen and (max-width: 1680px){
+    .top-nav{
+        width: 100%;
+        position: fixed;
+    }
+}
+
 
 /* ----- ADDED THE FONTS FOR THE PROJECT ----- */
 
@@ -57,7 +66,7 @@ a {
 }
 
 .top-nav {
-  width: 1310px;
+  width: 100%;
   background: #fff;
   height: 34px;
   border-bottom: 1px solid #c4c4c4;
@@ -65,7 +74,8 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 0 20px 5px 0;
-  position: absolute;
+  margin: 0 -10px 0 -10px;
+  position: fixed;
   z-index: 1;
 }
 
@@ -201,7 +211,8 @@ a {
   width: 100%;
   text-align: center;
   flex-direction: column;
-  justify-content: center;
+  
+  align-content: center;
 }
 
 .title {
@@ -230,6 +241,10 @@ span {
   margin: 25px 0 15px 370px;
   font-family: 'Merriweather', serif;
   width: 600px;
+}
+.auth-main{
+    vertical-align: middle;
+    justify-content: center;
 }
 
 .author-name {
@@ -686,8 +701,9 @@ span {
 }
 
 .bottom-section-container {
-  max-width: 1229px;
+  width: 1229px;
   margin: 50px 0 10px 40px;
+  align-content: center;
 }
 
 .bottom-section-header {
@@ -846,4 +862,8 @@ span {
 .footer-line {
   border-top: 2px solid #000;
   width: 100%;
+}
+
+.inicio {
+
 }
