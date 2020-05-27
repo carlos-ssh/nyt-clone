@@ -29,9 +29,6 @@ body {
   background: #fefefe;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 14px;
-  width: 100%;
-  height: 100%;
-  min-width: 1280px;
 }
 
 /* ----- ...HERE STARTS THE STICKY NAVBAR ----- */
@@ -68,9 +65,9 @@ a {
 }
 
 .top-nav img {
-  display: flex;
-  height: 28px;
-  width: 200px;
+  display: blok;
+  height: 30px;
+  width: 220px;
   align-items: center;
   margin: 0 200px 0 200px;
 }
@@ -87,20 +84,6 @@ a {
 
 .search {
   margin: 5px 25px 0 25px;
-}
-
-.btncomm {
-  background-color: rgb(86, 123, 149);
-  color: white;
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
-  font-size: 0.8125rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  line-height: 1.5rem;
-  text-transform: uppercase;
-  border: 1px solid rgb(50, 104, 145);
-  border-radius: 3px;
-  padding: 5px 10px 5px 10px;
 }
 
 .rgt-icons {
@@ -181,8 +164,10 @@ a {
 .main {
   width: 1680px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 20% 60% 20%;
   grid-template-rows: repeat(5, auto);
+  justify-items: center;
+  justify-content: center;
 }
 
 .title {
@@ -204,13 +189,14 @@ span {
   color: #888;
 }
 .p-img {
-  grid-row: 3;
+  text-align: left;
+  grid-row: 4;
   grid-column: 2/3;
 }
 
 .author {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 20% 60% 20%;
   grid-template-rows: repeat(4, auto);
   font-family: 'Merriweather', serif;
   align-items: center;
@@ -218,14 +204,15 @@ span {
   width: 660px;
   height: 50px;
   line-height: 30px;
-  margin-left: 25%;
+  margin-left: 30%;
   margin-top: 30px;
+
 }
 
 .author-name {
   font-weight: 600;
   font-size: 15px;
-  grid-column: 1;
+  grid-column: 2;
 }
 
 .auth {
@@ -262,7 +249,7 @@ span {
 .main-article {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 20% 60% 20%;
   grid-template-rows: repeat(4, auto);
   font-size: 1.25rem;
   line-height: 1.875rem;
@@ -290,7 +277,6 @@ span {
 .special-time{
   grid-row: 4;
   grid-column: 2/3;
-  text-align: left;
 }
 
 .inflation-theory {
@@ -479,6 +465,20 @@ span {
 
 .most-title {
   padding: 15px 0 16px 0;
+}
+
+.btncomm button {
+  background-color: rgb(86, 123, 149);
+  color: white;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  border: 1px solid rgb(50, 104, 145);
+  border-radius: 3px;
+  padding: 5px 10px 5px 10px;
 }
 
 .more img {
@@ -741,16 +741,31 @@ span {
   padding: 0 10px 0 0;
 }
 
+
+
+
+
+
 /* ----- ¡Screen Sizes! ----- */
 
-@media screen and (max-width: 1280){
+@media screen and (max-width: 1680px){
+  body{
+    vertical-align: center;
+  }
+}
+
+@media screen and (max-width: 1280px) {
   body{
     width: 1280px;
     vertical-align: middle;
+    background: red;
   }
-
   .top-nav{
-    width: 1280px;
-
+    justify-items: center;
+    width: 100%;
   }
+  .main{
+    justify-items: center;
+  }
+
 }
