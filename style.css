@@ -32,7 +32,7 @@ body {
   justify-items: center;
   max-width: 1680px;
   min-width: 480px;
-
+  height: auto;
 }
 
 /* ----- ...HERE STARTS THE STICKY NAVBAR ----- */
@@ -610,13 +610,10 @@ span {
 .bottom-section-container {
   content: "";
   background-color: white;
-  border-bottom: 1px solid #e2e2e2;
   border-top: 2px solid #e2e2e2;
-  height: 1px;
-  top: 30px;
-  left: 70px;
   max-width: 100vw;
   min-width: 480px;
+  z-index: -1;
 }
 
 .bottom-section-container {
@@ -660,8 +657,6 @@ span {
 
 .bottom-link-section-uls {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .bottom-link-section-uls-links {
@@ -692,7 +687,6 @@ span {
   font-size: 16px;
   font-weight: 700;
   height: 25px;
-  line-heightspace-between
 }
 
 .bottom-link-section-columns{
@@ -777,8 +771,6 @@ span {
   padding-left: 20px;
 }
 
-
-
 .footer-list {
   list-style: none;
   padding: 0;
@@ -794,9 +786,52 @@ span {
   font-size: 11px;
 }
 
+.popup{
+  position: sticky;
+  bottom: 0;
+  height: 58px;
+  display: grid;
+  border-top: 2px solid #000000;
+  background: #ffffff;
+  width: 100vw;
+  padding-top: 30px;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: repeat(1, auto);
+}
+
+.ft-cnt{
+  color: #000000;
+  text-decoration: none;
+  grid-column: 2/2;
+  grid-row: 1;
+  margin-left: 35%;
+}
+
+.coronavirus{ 
+  grid-column: 2/2;
+  grid-row: 1;
+  font-size: 18px;
+  color: #000000;
+  justify-content: flex-end;
+  margin-left: 45%;
+}
+
+.ft-cnt a{
+  font-size: bolder;
+  color: #000000;
+}
+
+.ft-cnt svg{
+  transform: rotate(270deg);
+  margin-left: 50px;
+}
 
 
 
+a:active{
+  color: #000000;
+  font-weight: bold;
+}
 
 /* ----- ¡Screen Sizes! ----- */
 
