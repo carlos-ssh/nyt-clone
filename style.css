@@ -163,10 +163,10 @@ li {
   grid-column: 2/3;
   text-align: left;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 900;
   font-style: italic;
-  margin: 40px 0 30px 140px;
+  margin: 40px 0 30px 10px;
   margin-bottom: 30px;
 }
 
