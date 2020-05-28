@@ -37,17 +37,16 @@ body {
 
 /* ----- ...HERE STARTS THE STICKY NAVBAR ----- */
 nav {
-  position: sticky ;
+  position: sticky;
   top: 0;
-  height: 38px;
 }
 
-/*YouTube Video*/
+/* YouTube Video */
 iframe {
   margin: 40px 0 0 0;
 }
 
-/*YouTube Video Comments*/
+/* YouTube Video Comments */
 figcaption {
   line-height: 15px;
   color: #c4c4c4;
@@ -59,13 +58,15 @@ a {
   text-decoration: none;
 }
 
-li{
+li {
   list-style: none;
-  }
-/*-----Here Starts the Sticky NavBar-----*/
+}
+
+/* -----Here Starts the Sticky NavBar----- */
 .top-nav {
   width: 100vw;
-  background: #ffffff;
+  height: auto;
+  background: #fff;
   border-bottom: 1px solid #c4c4c4;
   display: flex;
   justify-content: space-between;
@@ -103,7 +104,7 @@ li{
 .spc-wrd {
   font-family: "franklyn-Regular" Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   width: 400px;
-  margin: 0px 0px 0px 25px;
+  margin: 0 0 0 25px;
 }
 
 .subs button {
@@ -142,32 +143,11 @@ li{
 }
 
 .nyt-logo {
+  height: 30px;
+  width: 100%;
   padding-top: 12px;
   align-self: center;
-}
-
-.bars:hover {
-  background: #c4c4c4;
-}
-
-.search:hover {
-  background: #c4c4c4;
-}
-
-.spc:hover {
-  text-decoration: underline;
-}
-
-.rgt-icons button:hover {
-  transition-timing-function: ease-in-out 1s;
-  height: 28px;
-  background: #326891;
-}
-
-/* ----- Finish the NavBar ----- */
-
-/* ----- ...HERE STARTS THE ARTICLE ----- */
-
+}/* ...HERE STARTS THE ARTICLE */
 .main {
   width: auto;
   display: grid;
@@ -187,7 +167,7 @@ li{
   font-size: 20px;
   font-weight: 900;
   font-style: italic;
-  margin: 40px 0px 30px 140px;
+  margin: 40px 0 30px 140px;
   margin-bottom: 30px;
 }
 
@@ -197,6 +177,7 @@ span {
   letter-spacing: 1px;
   color: #888;
 }
+
 .p-img {
   text-align: left;
   grid-row: 4;
@@ -204,7 +185,6 @@ span {
 }
 
 .author {
-  display: grid;
   grid-template-columns: 20% 60% 20%;
   grid-template-rows: repeat(4, auto);
   font-family: 'Merriweather', serif;
@@ -245,13 +225,8 @@ span {
   width: 20px;
   height: 20px;
   padding: 5px;
-  border: 1px;
-  background: #eee;
   border-radius: 100%;
-}
-
-.icon-btns svg:hover {
-  background: #c4c4c4;
+  background: #e0e0e0;
 }
 
 .main-article {
@@ -271,18 +246,17 @@ span {
   grid-column: 2/3;
 }
 
-.spiral{
+.spiral {
   grid-row: 2;
   grid-column: 2/3;
 }
 
-.main-img{
+.main-img {
   grid-row: 3;
   grid-column: 2/3;
-  
 }
 
-.special-time{
+.special-time {
   grid-row: 4;
   grid-column: 2/3;
 }
@@ -367,7 +341,7 @@ span {
   z-index: -1;
 }
 
-.articles-down{
+.articles-down {
   grid-row: 5;
   grid-column: 2/3;
   width: 600px;
@@ -401,7 +375,7 @@ span {
   width: 300px;
 }
 
-.sm-grid{
+.sm-grid {
   position: relative;
   bottom: 35px;
   left: 345px;
@@ -435,13 +409,13 @@ span {
   font-size: 14px;
 }
 
-.intro{
+.intro {
   grid-row: 1;
   grid-column: 2/3;
   font-size: 1.15rem;
 }
 
-.big-ass{
+.big-ass {
   grid-row: 2;
   grid-column: 2/3;
   width: 600px;
@@ -499,7 +473,6 @@ span {
 .most-title {
   padding: 15px 0 16px 0;
 }
-
 
 .more img {
   width: 227px;
@@ -574,11 +547,6 @@ span {
   grid-column: 3/3;
 }
 
-.title-more a:hover {
-  text-decoration: underline;
-  color: #000;
-}
-
 .more i {
   text-align: right;
   color: #666;
@@ -611,14 +579,10 @@ span {
   content: "";
   background-color: white;
   border-top: 2px solid #e2e2e2;
-  max-width: 100vw;
   min-width: 480px;
-  z-index: -1;
-}
-
-.bottom-section-container {
   max-width: 90vw;
   margin: 50px 0 10px 40px;
+  z-index: -1;
 }
 
 .bottom-section-header {
@@ -672,7 +636,6 @@ span {
   line-height: 16px;
 }
 
-
 .bottom-link-section-columns-subscribe {
   white-space: nowrap;
 }
@@ -689,27 +652,27 @@ span {
   height: 25px;
 }
 
-.bottom-link-section-columns{
+.bottom-link-section-columns {
   grid-column: 1/5;
   grid-row: 1;
 }
 
-.bottom-link-section-columns-two{
+.bottom-link-section-columns-two {
   grid-column: 2/5;
   grid-row: 1;
 }
 
-.bottom-link-section-columns-three{
+.bottom-link-section-columns-three {
   grid-column: 3/5;
   grid-row: 1;
 }
 
-.bottom-link-section-columns-four{
+.bottom-link-section-columns-four {
   grid-column: 4/5;
   grid-row: 1;
 }
 
-.bottom-link-section-columns-five{
+.bottom-link-section-columns-five {
   grid-column: 5/5;
   grid-row: 1;
 }
@@ -782,77 +745,114 @@ span {
   line-height: 20px;
 }
 
-.footer-list-items a{
+.footer-list-items a {
   font-size: 11px;
 }
 
-.popup{
+.popup {
   position: sticky;
   bottom: 0;
   height: 58px;
   display: grid;
-  border-top: 2px solid #000000;
-  background: #ffffff;
+  border-top: 2px solid #000;
+  background: #fff;
   width: 100vw;
   padding-top: 30px;
   grid-template-columns: 70% 30%;
   grid-template-rows: repeat(1, auto);
 }
 
-.ft-cnt{
-  color: #000000;
+.ft-cnt {
+  color: #000;
   text-decoration: none;
   grid-column: 2/2;
   grid-row: 1;
   margin-left: 35%;
 }
 
-.coronavirus{ 
+.coronavirus {
   grid-column: 2/2;
   grid-row: 1;
   font-size: 18px;
-  color: #000000;
+  color: #000;
   justify-content: flex-end;
   margin-left: 45%;
 }
 
-.ft-cnt a{
+.ft-cnt a {
   font-size: bolder;
-  color: #000000;
+  color: #000;
 }
 
-.ft-cnt svg{
+.ft-cnt svg {
   transform: rotate(270deg);
   margin-left: 50px;
 }
 
-
-
-a:active{
-  color: #000000;
+a:active {
+  color: #000;
   font-weight: bold;
+}
+
+.bars:hover {
+  background: #c4c4c4;
+}
+
+.search:hover {
+  background: #c4c4c4;
+}
+
+.spc:hover {
+  text-decoration: underline;
+}
+
+.rgt-icons button:hover {
+  transition-timing-function: ease-in-out 1s;
+  height: 28px;
+  background: #326891;
+}
+
+.title-more a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.btncomm button:hover {
+  transition-timing-function: ease-in-out 1s;
+  height: auto;
+  background: #326891;
+}
+
+.icon-btns svg:hover {
+  border: 1px solid #000;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 100%;
 }
 
 /* ----- ¡Screen Sizes! ----- */
 
-@media screen and (max-width: 1680px){
-  body{
+@media screen and (max-width: 1680px) {
+  body {
     vertical-align: center;
     width: auto;
   }
 }
 
 @media screen and (max-width: 1280px) {
-  body{
+  body {
     width: 1280px;
     vertical-align: middle;
   }
-  .top-nav{
+
+  .top-nav {
     justify-items: center;
     width: 100%;
   }
-  .main{
+
+  .main {
     justify-items: center;
   }
-
 }
