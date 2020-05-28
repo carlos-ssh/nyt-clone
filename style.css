@@ -269,7 +269,7 @@ span {
 .inflation-theory-cell {
   display: inline-block;
   color: #666;
-  font-family: 'nyt-cheltenham-sh, georgia, times new roman, times, serif';
+  font-family: 'Times New Roman', Times, serif;
   line-height: 1.125rem;
   font-weight: 400;
   font-style: normal;
@@ -316,7 +316,7 @@ span {
 }
 
 .inflation-theory-credit {
-  font-family: 'nyt-cheltenham, georgia, times new roman, times, serif';
+  font-family: 'Times New Roman', Times, serif;
   color: #333;
   font-size: 100%;
 }
@@ -582,7 +582,6 @@ span {
   margin: 50px 0 10px 40px;
   z-index: -1;
 }
-
 
 .bottom-section-header {
   margin-top: 20px;
