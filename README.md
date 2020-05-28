@@ -11,7 +11,7 @@ This project consists of building an HTML document that matches the appearance o
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/carlos-ssh/nyt-clone/6c275aded818639d17f1d895cff618d58ef035df/index.html)
+[Live Demo Link](https://rawcdn.githack.com/carlos-ssh/nyt-clone/2a9951a8bce39969e4e9d7ec10c9247e10c3acc3/index.html)
 
 
 
