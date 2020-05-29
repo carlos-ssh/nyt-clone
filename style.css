@@ -1,0 +1,854 @@
+/* ----- ADDED THE FONTS FOR THE PROJECT ----- */
+
+@font-face {
+  font-family: 'Cheltenham';
+  src: url('resources/fonts/Cheltenham Bold Italic.otf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'franklyn-Regular';
+  src: url('resources/fonts/franklyn-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'nyt-imperial-bold';
+  src: url('resources/fonts/nyt-imperial-bold.woff.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'nyt-imperial-bold';
+  src: url('resources/fonts/times.ttf')  format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fefefe;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  justify-items: center;
+  max-width: 1680px;
+  min-width: 480px;
+  height: auto;
+}
+
+/* ----- ...HERE STARTS THE STICKY NAVBAR ----- */
+nav {
+  position: sticky;
+  top: 0;
+}
+
+/* YouTube Video */
+iframe {
+  margin: 40px 0 0 0;
+}
+
+/* YouTube Video Comments */
+figcaption {
+  line-height: 15px;
+  color: #c4c4c4;
+  font-size: 12px;
+  align-self: flex-start;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* -----Here Starts the Sticky NavBar----- */
+.top-nav {
+  width: 100vw;
+  height: auto;
+  background: #fff;
+  border-bottom: 1px solid #c4c4c4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-nav img {
+  height: 30px;
+  width: 220px;
+  align-items: center;
+  margin: 0 200px 0 200px;
+}
+
+.lft-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.bars {
+  margin: 5px 15px 0 15px;
+}
+
+.search {
+  margin: 5px 25px 0 25px;
+}
+
+.rgt-icons {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+  margin: 6px 15px 10px 0;
+}
+
+.spc-wrd {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 400px;
+  margin: 0 0 0 25px;
+}
+
+.subs button {
+  border-radius: 3px;
+  background-color: #567b95;
+  color: #fff;
+  border: none;
+  height: 28px;
+  margin-top: 5px;
+}
+
+.login button {
+  margin: 5px 0 0 7px;
+  border-radius: 3px;
+  background-color: #567b95;
+  color: #fff;
+  border: none;
+  height: 28px;
+}
+
+.rgt-icons button {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  font-size: 12px;
+  position: relative;
+  padding: 0 15px 0 15px;
+}
+
+.lft-icons a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+  width: 400px;
+  height: 30px;
+}
+
+.nyt-logo {
+  height: 30px;
+  width: 20vw;
+  padding-top: 12px;
+  align-self: center;
+}/* ...HERE STARTS THE ARTICLE */
+.main {
+  width: auto;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: repeat(5, auto);
+  justify-items: center;
+  justify-content: center;
+  grid-row: 2;
+  grid-column: 2/3;
+}
+
+.title {
+  grid-row: 1;
+  grid-column: 2/3;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  font-style: italic;
+  margin: 40px 0 30px 10px;
+  margin-bottom: 30px;
+}
+
+span {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #888;
+}
+
+.p-img {
+  text-align: left;
+  grid-row: 4;
+  grid-column: 2/3;
+}
+
+.author {
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: repeat(4, auto);
+  font-family: 'Merriweather', serif;
+  align-items: center;
+  display: inline-block;
+  width: 220px;
+  height: 50px;
+  line-height: 30px;
+  margin-left: 25%;
+  margin-top: 30px;
+}
+
+.author-name {
+  font-weight: 600;
+  font-size: 15px;
+  grid-column: 2;
+}
+
+.auth {
+  text-decoration: none;
+  color: #000;
+}
+
+.auth:hover {
+  text-decoration: underline;
+}
+
+.icon-btns > li {
+  display: inline-block;
+  position: relative;
+  bottom: 50px;
+  left: 500px;
+  margin-right: 10px;
+  z-index: -1;
+}
+
+.icon-btns svg {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 100%;
+  background: #e0e0e0;
+}
+
+.main-article {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: repeat(5, auto);
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-family: nyt-imperial, georgia, 'times new roman', times, serif;
+  justify-content: center;
+  align-content: center;
+}
+
+.wtf {
+  grid-row: 1;
+  grid-column: 2/3;
+}
+
+.spiral {
+  grid-row: 2;
+  grid-column: 2/3;
+}
+
+.main-img {
+  grid-row: 3;
+  grid-column: 2/3;
+}
+
+.special-time {
+  grid-row: 4;
+  grid-column: 2/3;
+}
+
+.inflation-theory {
+  width: 945px;
+  margin: 40px auto;
+  box-sizing: border-box;
+}
+
+.inflation-theory-cell {
+  display: inline-block;
+  color: #666;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.125rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+
+.inflation-theory-container {
+  background-repeat: no-repeat;
+  background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+  background-size: contain;
+  padding-top: 280px;
+}
+
+.inflation-theory-grid {
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  column-gap: 15px;
+  box-sizing: border-box;
+  grid-row-gap: 130px;
+  margin-top: -130px;
+  height: 500px;
+}
+
+.inflationSectionGrid p {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #000;
+  margin: 0;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+.inflation-theory-footer {
+  width: 60px;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin: 0 0 13px;
+  background-color: #000;
+  max-width: 945px;
+}
+
+.inflation-theory-credit {
+  font-family: 'Times New Roman', Times, serif;
+  color: #333;
+  font-size: 100%;
+}
+
+.inflation-theory-credit p {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 500;
+  font-style: normal;
+  font-family: arial, helvetica, sans-serif;
+  width: 700px;
+}
+
+.article-figures {
+  padding-bottom: 30px;
+  box-sizing: content-box;
+  width: 655px;
+  height: 437px;
+  position: relative;
+  right: 40px;
+  z-index: -1;
+}
+
+.articles-down {
+  grid-row: 5;
+  grid-column: 2/3;
+  width: 600px;
+  height: 120px;
+  margin-top: 28px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  font-size: 10px;
+}
+
+.btn-comments {
+  margin-top: 20px;
+  height: 32px;
+  display: inline-flex;
+  z-index: -1;
+}
+
+.btncomm button {
+  margin-top: 30px;
+  background-color: rgb(86, 123, 149);
+  color: white;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  border: 1px solid rgb(50, 104, 145);
+  border-radius: 3px;
+  padding: 5px 10px 5px 10px;
+  width: 300px;
+}
+
+.sm-grid {
+  position: relative;
+  bottom: 35px;
+  left: 345px;
+  z-index: -1;
+}
+
+.icns-sm {
+  width: 250px;
+  display: inline-flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.article-figures > :first-child {
+  width: 100%;
+}
+
+.video-title {
+  color: #666;
+}
+
+.video-credit {
+  font-size: 13px;
+  color: #888;
+}
+
+.container-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  font-size: 14px;
+}
+
+.intro {
+  grid-row: 1;
+  grid-column: 2/3;
+  font-size: 1.15rem;
+}
+
+.big-ass {
+  grid-row: 2;
+  grid-column: 2/3;
+  width: 600px;
+  font-size: 1.25rem;
+}
+
+.bottom-things {
+  width: 90%;
+  display: grid;
+  row-gap: 2%;
+  grid-auto-rows: minmax(auto, auto);
+  grid-row: 1;
+  grid-column: 1/3;
+}
+
+.more {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 1fr));
+  column-gap: 1%;
+  row-gap: 1%;
+  grid-auto-rows: minmax(auto, auto);
+  grid-row: 1;
+  grid-column: 1/3;
+}
+
+.side-b {
+  width: 208px;
+  grid-row: 1;
+  grid-column: 2/3;
+  justify-content: left;
+  z-index: -1;
+}
+
+.tw {
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  border: 1px;
+  background: #eee;
+  border-radius: 100%;
+}
+
+.title-more {
+  justify-content: left;
+  padding: 15px 0 10px 0;
+}
+
+.title-more a {
+  text-decoration: none;
+  color: #000;
+}
+
+.most-title {
+  padding: 15px 0 16px 0;
+}
+
+.more img {
+  width: 227px;
+  height: 152px;
+}
+
+.imgs-container {
+  width: 80%;
+}
+
+.uno {
+  grid-row: 1;
+  grid-column: 1/4;
+  border-top: 1px solid #000;
+}
+
+.dos {
+  grid-row: 2;
+  grid-column: 1/3;
+}
+
+.tres {
+  grid-row: 2;
+  grid-column: 2/3;
+}
+
+.cuatro {
+  grid-row: 2;
+  grid-column: 3/3;
+}
+
+.cinco {
+  grid-row: 3;
+  grid-column: 1/3;
+}
+
+.seis {
+  grid-row: 3;
+  grid-column: 2/3;
+}
+
+.siete {
+  grid-row: 3;
+  grid-column: 3/3;
+}
+
+.ocho {
+  grid-row: 1;
+  grid-column: 4/4;
+  border-top: 1px solid #000;
+}
+
+.nueve {
+  grid-row: 4;
+  grid-column: 1/4;
+  border-top: 1px solid #000;
+}
+
+.diez {
+  grid-row: 5;
+  grid-column: 1/3;
+}
+
+.once {
+  grid-row: 5;
+  grid-column: 2/3;
+}
+
+.doce {
+  grid-row: 5;
+  grid-column: 3/3;
+}
+
+.more i {
+  text-align: right;
+  color: #666;
+}
+
+.anchors-aside h4 {
+  font-size: 16px;
+  color: #000;
+  border-top: 1px solid rgb(226, 226, 226);
+  padding: 13px 0 13px 0;
+  font-family: 'Libre Franklin', sans-serif;
+  z-index: -1;
+}
+
+.anchors-aside {
+  width: 318px;
+  position: relative;
+  right: 125px;
+}
+
+.trece {
+  position: relative;
+  left: 1020px;
+  bottom: 796px;
+  width: 350px;
+  z-index: -1;
+}
+
+.bottom-section-container {
+  content: "";
+  background-color: white;
+  border-top: 2px solid #e2e2e2;
+  min-width: 480px;
+  max-width: 90vw;
+  margin: 50px 0 10px 40px;
+  z-index: -1;
+}
+
+.bottom-section-header {
+  margin-top: 20px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bottom-nytimes-logo {
+  height: auto;
+  width: 100%;
+}
+
+.goto-homepage-link {
+  color: #567b95;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 10px;
+  text-decoration: none;
+  z-index: -1;
+}
+
+.bottom-link-section-container {
+  display: grid;
+  grid-template-columns: repeat(5, 17%);
+  grid-template-rows: repeat(2, auto);
+  margin-bottom: 25px;
+  width: 85vw;
+  max-width: 1680px;
+  min-width: 480px;
+  margin-left: 3%;
+  z-index: -1;
+}
+
+.bottom-link-section-uls {
+  list-style: none;
+}
+
+.bottom-link-section-uls-links {
+  color: #000;
+  display: inline-block;
+  font-family: helvetica, arial, sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 150px;
+  font-size: 14px;
+  font-weight: 500;
+  height: 23px;
+  line-height: 16px;
+}
+
+.bottom-link-section-columns-subscribe {
+  white-space: nowrap;
+}
+
+.bottom-link-section-columns-subscribe-links {
+  color: #000;
+  display: inline-block;
+  font-family: helvetica, arial, sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 150px;
+  font-size: 16px;
+  font-weight: 700;
+  height: 25px;
+}
+
+.bottom-link-section-columns {
+  grid-column: 1/5;
+  grid-row: 1;
+}
+
+.bottom-link-section-columns-two {
+  grid-column: 2/5;
+  grid-row: 1;
+}
+
+.bottom-link-section-columns-three {
+  grid-column: 3/5;
+  grid-row: 1;
+}
+
+.bottom-link-section-columns-four {
+  grid-column: 4/5;
+  grid-row: 1;
+}
+
+.bottom-link-section-columns-five {
+  grid-column: 5/5;
+  grid-row: 1;
+}
+
+.site-index-subscribe-label {
+  border-left: 1px solid #e2e2e2;
+  padding-left: 15px;
+  grid-column: 6/6;
+  grid-row: 1;
+}
+
+.bottom-link-section-columns-subscribe-svg {
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  margin-right: 7px;
+}
+
+.bottom-link-section-columns-subscribe-links-last {
+  color: #000;
+  display: inline-block;
+  font-family: helvetica, arial, sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 150px;
+  font-size: 11px;
+  font-weight: 500;
+  height: 23px;
+  line-height: 21px;
+}
+
+.bottom-link-section-columns-subscribe-links-last-2 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #e2e2e2;
+  margin-top: 2px;
+}
+
+.footer-nav {
+  border-top: 1px solid #ebebeb;
+  padding-top: 9px;
+}
+
+.footer-line {
+  grid-row: 2;
+  display: inline-block;
+  width: 90vw;
+  border-top: 1px solid #666;
+  margin: 30px 5% 30px 0;
+  height: 10px;
+}
+
+.footer-links {
+  color: #666;
+  font-family: helvetica, arial, sans-serif;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 20px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  line-height: 8px;
+}
+
+.footer-list-items {
+  display: inline-block;
+  line-height: 20px;
+}
+
+.footer-list-items a {
+  font-size: 11px;
+}
+
+.popup {
+  position: sticky;
+  bottom: 0;
+  height: 58px;
+  display: grid;
+  border-top: 2px solid #000;
+  background: #fff;
+  width: 100vw;
+  padding-top: 30px;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: repeat(1, auto);
+}
+
+.ft-cnt {
+  color: #000;
+  text-decoration: none;
+  grid-column: 2/2;
+  grid-row: 1;
+  margin-left: 35%;
+}
+
+.coronavirus {
+  grid-column: 2/2;
+  grid-row: 1;
+  font-size: 18px;
+  color: #000;
+  justify-content: flex-end;
+  margin-left: 45%;
+}
+
+.ft-cnt a {
+  font-weight: bold;
+  color: #000;
+}
+
+.ft-cnt svg {
+  transform: rotate(270deg);
+  margin-left: 50px;
+}
+
+a:active {
+  color: #000;
+  font-weight: bold;
+}
+
+.bars:hover {
+  background: #c4c4c4;
+}
+
+.search:hover {
+  background: #c4c4c4;
+}
+
+.spc:hover {
+  text-decoration: underline;
+}
+
+.rgt-icons button:hover {
+  height: 28px;
+  background: #326891;
+}
+
+.title-more a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.btncomm button:hover {
+  height: auto;
+  background: #326891;
+}
+
+.icon-btns svg:hover {
+  border: 1px solid #000;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 100%;
+}
+
+/* ----- ¡Screen Sizes! ----- */
+
+@media screen and (max-width: 1680px) {
+  body {
+    vertical-align: center;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    width: 1280px;
+    vertical-align: middle;
+  }
+
+  .top-nav {
+    justify-items: center;
+    width: 100%;
+  }
+
+  .main {
+    justify-items: center;
+  }
+}
